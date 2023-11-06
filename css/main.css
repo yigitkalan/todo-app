@@ -1,3 +1,105 @@
+header {
+  align-self: flex-start;
+}
 
+body {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: Poppins;
+}
+
+.slogan {
+  font-size: 1rem;
+  background-color: rgba(255, 235, 125, 0.6);
+  text-align: start;
+  padding: 0.4em;
+  display: inline-block;
+}
+
+.del-button {
+  background-color: white;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  color: blueviolet;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+.del-button svg {
+  padding-top: 0.2em;
+  width: 1.4em;
+}
+.del-button svg path {
+  stroke: blueviolet;
+}
+
+.edit-button {
+  background-color: white;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  color: blueviolet;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+.edit-button svg {
+  padding-top: 0.2em;
+  width: 1.4em;
+}
+.edit-button svg path {
+  stroke: blueviolet;
+}
+
+.task-button {
+  align-self: flex-end;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  color: blueviolet;
+  padding: 0.6em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tasks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tasks table tr {
+  border-bottom: thin solid rgba(0, 0, 0, 0.2);
+  height: 2.4em;
+}
+.tasks table th,
+.tasks table td {
+  text-align: center;
+}
+.tasks table th:nth-child(2),
+.tasks table td:nth-child(2) {
+  width: 50%;
+  padding: 0.4em;
+}
+.tasks table th:nth-child(4),
+.tasks table td:nth-child(4),
+.tasks table th:nth-child(4),
+.tasks table td:nth-child(4) {
+  text-align: end;
+  width: 10%;
+  padding-right: 0.4em;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,124 @@
+header {
+    align-self: flex-start;
+}
+
+body {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-family: Poppins;
+}
+
+.slogan {
+    font-size: 1rem;
+    background-color: rgba(255, 235, 125, 0.6);
+    text-align: start;
+    padding: 0.4em;
+    display: inline-block;
+}
+
+// svg{
+//     width: 1.5em;
+//     height: 1.5em;
+//     fill: blueviolet;
+// }
+
+
+.del-button {
+    background-color: white;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+
+    svg {
+        padding-top: 0.2em;
+        width: 1.4em;
+
+        path {
+            stroke: blueviolet;
+        }
+    }
+
+}
+
+.edit-button {
+    background-color: white;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+
+    svg {
+        padding-top: 0.2em;
+        width: 1.4em;
+
+        path {
+            stroke: blueviolet;
+        }
+    }
+
+}
+
+.task-button {
+    align-self: flex-end;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    color: blueviolet;
+    padding: 0.6em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            border-bottom: thin solid rgba($color: #000000, $alpha: 0.2);
+            height: 2.4em;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 50%;
+            padding: 0.4em;
+        }
+
+        th:nth-child(4),
+        td:nth-child(4),
+        th:nth-child(4),
+        td:nth-child(4) {
+            text-align: end;
+            width: 10%;
+            padding-right: 0.4em;
+        }
+
+
+    }
+
+}
