@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,27 +17,60 @@ button {
 
 .slogan {
   font-size: 1rem;
-  background-color: rgba(255, 235, 125, 0.6);
+  background-color: rgba(255, 235, 125, 0.3);
   text-align: start;
   padding: 0.4em;
   display: inline-block;
 }
 
+.status-done {
+  background-color: #26ff60;
+  border: 2px solid rgba(38, 255, 96, 0.6);
+  border-radius: 4px;
+  color: black;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+}
+
+.status-todo {
+  background-color: white;
+  border: 2px solid rgba(143, 143, 143, 0.6);
+  border-radius: 4px;
+  color: #8f8f8f;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+}
+
+.status-progress {
+  background-color: #ffc226;
+  border: 2px solid rgba(255, 194, 38, 0.6);
+  border-radius: 4px;
+  color: black;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+}
+
 .del-button {
   background-color: white;
-  border: 2px solid blueviolet;
+  border: 2px solid rgba(255, 46, 84, 0.6);
   border-radius: 4px;
-  color: blueviolet;
+  color: rgba(255, 46, 84, 0.6);
   text-align: center;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
 }
 .del-button svg {
-  padding-top: 0.2em;
+  padding-top: 0.4em;
   width: 1.4em;
 }
 .del-button svg path {
-  stroke: blueviolet;
+  stroke: rgba(255, 46, 84, 0.6);
 }
 
 .edit-button {
@@ -75,6 +109,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .tasks table {
   width: 100%;
@@ -94,12 +129,19 @@ button {
   padding: 0.4em;
 }
 .tasks table th:nth-child(4),
-.tasks table td:nth-child(4),
-.tasks table th:nth-child(4),
 .tasks table td:nth-child(4) {
   text-align: end;
   width: 10%;
   padding-right: 0.4em;
+}
+
+@media only screen and (min-width: 920px) {
+  header {
+    margin: 0em 10em;
+  }
+  .tasks {
+    margin: 0em 9em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
