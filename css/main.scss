@@ -126,9 +126,13 @@ button {
         width: 100%;
         border-collapse: collapse;
 
+        tr:nth-child(1) {
+            border-bottom: medium solid rgba($color: #000000, $alpha: 1);
+        }
         tr {
             border-bottom: thin solid rgba($color: #000000, $alpha: 0.2);
             height: 2.4em;
+
         }
 
         th,
@@ -171,6 +175,7 @@ button {
     header {
         margin-left: 1em;
     }
+
     .tasks {
         width: 60%;
     }

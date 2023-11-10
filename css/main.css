@@ -119,6 +119,9 @@ button {
   width: 100%;
   border-collapse: collapse;
 }
+.tasks table tr:nth-child(1) {
+  border-bottom: medium solid black;
+}
 .tasks table tr {
   border-bottom: thin solid rgba(0, 0, 0, 0.2);
   height: 2.4em;
